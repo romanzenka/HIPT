@@ -26,10 +26,12 @@ import webdataset as wds
 
 # Torch Dependencies
 import torch
+import torch.nn as nn
 import torch.multiprocessing
 import torchvision
 from torchvision import transforms
 from einops import rearrange, repeat
+from attention_visualization_utils import get_patch_attention_scores, get_region_attention_scores, tensorbatch2im
 torch.multiprocessing.set_sharing_strategy('file_system')
 
 
